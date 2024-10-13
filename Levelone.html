@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Level1.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><img src="cognifyz-logo.png" alt="Logo" /></div>
+
+        <nav>
+          <!--Simple navigation Functionality-->
+          <a href="#task1">Task 1</a>
+          <a href="#task2">Task 2</a>
+        </nav>
+      </div>
+    </header>
+    <section class="Task_1">
+      <h2>Task 1</h2>
+    </section>
+
+    <section class="info" id="task1">
+      <!--Task 1.1 Simple webpage with a heading,paragraph,and image using HTML and CSS-->
+
+      <div class="info_logo">
+        <img src="Level1 Hero.png" alt="" srcset="" />
+      </div>
+      <div class="info_container">
+        <h2>Cognifyz Technologies</h2>
+        <p>
+          Cognifyz Technologies is a leading technology company that specializes
+          in the dynamic field of data science and excels in delivering
+          impactful projects and solutions.
+        </p>
+        <p>
+          The company offers a wide range of products and services, including
+          artificial intelligence (AI), machine learning (ML), and data
+          analytics tools.
+        </p>
+        <p>
+          Cognifyz Technologies also provides training programs to enhance
+          skills and knowledge in these areas.
+        </p>
+        <p>
+          The company focuses on delivering innovative and cutting-edge
+          solutions to meet the evolving needs of businesses.
+        </p>
+      </div>
+    </section>
+
+    <section class="form">
+      <!--BASIC Form-->
+      <form action="">
+        <h1>Send a message</h1>
+        <label for="">Name</label>
+        <input type="text" />
+        <label for="">Email</label>
+        <input type="email" />
+        <label for="">Message</label>
+        <textarea
+          name="message"
+          id=""
+          placeholder="write a Message."
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </section>
+    <!------------------------TASK 2------------------------------>
+
+    <section class="task-2" id="task2">
+      <h1>Task 2</h1>
+
+      <div class="color-button">
+        <p>Click on the button to change its color.</p>
+        <button class="Clr_button" id="color-button" onclick="ChangeColor()">
+          Click me
+        </button>
+      </div>
+
+      <div class="alert-button">
+        <p>Click on the button to Alert!!</p>
+        <button class="alert" id="alert-button" onclick="alert_function()">
+          Alert
+        </button>
+      </div>
+
+      <div class="calculator_container">
+        <h1>Enter numbers to add</h1>
+        <div>
+          <input type="text" id="inputA" />
+          <p>+</p>
+          <input type="text" id="inputB" />
+        </div>
+        <div class="buttons">
+          <button class="add-Button" onclick="Addition()">Add</button>
+          <button class="clear-Button" onclick="Clear()">Clear</button>
+        </div>
+        <p id="result"></p>
+      </div>
+    </section>
+    <footer>
+      <p>Done By Naresh Kumar</p>
+    </footer>
+
+    <script>
+      function Clear() {
+        let A = (document.getElementById("inputA").value = "");
+
+        let B = (document.getElementById("inputB").value = "");
+        document.getElementById("result").innerHTML = "";
+      }
+      function Addition() {
+        let A = document.getElementById("inputA").value;
+
+        let B = document.getElementById("inputB").value;
+
+        var result = parseInt(A) + parseInt(B);
+
+        document.getElementById("result").innerHTML = result;
+        console.log(result);
+      }
+
+      index = 0;
+      function ChangeColor() {
+        let btn = document.getElementById("color-button");
+        const colors = [
+          "blue",
+          "red",
+          "green",
+          "yellow",
+          "orange",
+          "pink",
+          "black",
+          "gray",
+          "violet",
+        ];
+        index++;
+        if (index > 8) {
+          index = 0;
+        }
+        console.log(index);
+
+        btn.style.backgroundColor = colors[index];
+      }
+
+      let date = Date();
+      function alert_function() {
+        console.log(date);
+        alert("You Have Clicked Alert on" + date);
+      }
+    </script>
+  </body>
+</html>

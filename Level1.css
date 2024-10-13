@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  height: 4rem;
+}
+nav a {
+  padding-left: 10px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #0751f1;
+  transition: ease-in-out 0.5ms;
+}
+
+.info {
+  max-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.info_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info_logo img {
+  height: 70%;
+}
+
+.info_container {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  gap: 30px;
+}
+.info_container h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.info_container p {
+  font-size: 20px;
+  height: max-content;
+  padding: 10px;
+  box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form form {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 50%;
+  height: 500px;
+  padding: 50px;
+  box-shadow: 0 3px 2px 3px rgba(0, 0, 0, 0.2);
+
+  border-radius: 10px;
+}
+
+form label {
+  font-family: sans-serif;
+  color: gray;
+}
+
+form h1 {
+  text-align: center;
+  font-family: sans-serif;
+  color: orange;
+}
+form input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 25px;
+  padding: 1px;
+  padding-left: 3px;
+}
+form textarea {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 200px;
+  padding: 2px;
+}
+form button {
+  height: 30px;
+  width: 100px;
+  align-self: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #0b92e5;
+  padding: 10px;
+  color: aliceblue;
+  font-size: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task-2 {
+  height: 100vh;
+}
+
+.task-2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding-top: 50px;
+}
+.color-button {
+  margin: 20px;
+  border: 1px solid black;
+  width: 50%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.Clr_button {
+  background-color: #0751f1;
+  color: white;
+  border: 1px grey;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.alert-button {
+  margin: 20px;
+  border: 1px solid black;
+  width: 50%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+}
+.alert {
+  background-color: red;
+  color: white;
+  border: 1px grey;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calculator_container {
+  margin: 20px;
+  border: 1px solid black;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+}
+.add-Button {
+  background-color: green;
+  color: white;
+  border: 1px grey;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.clear-Button {
+  background-color: red;
+  color: white;
+  border: 1px grey;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+}
